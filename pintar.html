@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintar el elemento</title>
+</head>
+<style>
+    #ele1{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body{
+        overflow: hidden;
+    }
+
+    h1{
+        text-align: center;
+        width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div id="ele1" onclick="pintar(this, 'yellow')">
+        <h1>Haz click donde gustes para cambiar el color <span id="activeText"></span></h1>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando el teclado</title>
+</head>
+<style>
+    #key{
+        width: 200px;
+        height: 200px;
+        border: solid 5px black;
+        border-radius: 50%;
+        box-shadow: 5px 5px 35px rgb(152, 160, 235);
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    h1, h2{
+        border-bottom: solid 2px rgb(152, 160, 235);
+        text-align: center;
+        margin: 50px 500px;
+    }
+
+    .container{
+        width: 80%;
+        height: 1000px;
+        background-color: rgb(95, 85, 85);
+        color: #fff;
+        border-radius: 50px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="key" onkeydown="cambiarColor(this, 'color')">
+        </div>
+        <h1>Cambia el color del circulo</h1>
+        <h2>Usa las teclas A S D</h2>
+    </div>
+
+    <script src="./assets/js/keydown.js"></script>
+</body>
+</html>
